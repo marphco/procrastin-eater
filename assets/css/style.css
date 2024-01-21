@@ -13,6 +13,14 @@ textarea {
   padding: 10px;
 }
 
+#logo {
+  border: 0;
+}
+
+#logo img {
+  max-height: 250px;
+}
+
 .display-3 {
   font-size: xx-large;
   color: white;
