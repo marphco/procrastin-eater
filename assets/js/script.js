@@ -5,7 +5,7 @@ $(document).ready(function () {
 
   // Function to display the current date
   function displayTime() {
-    const today = dayjs().format('MMM DD, YYYY');
+    const today = dayjs().format('MMMM DD, YYYY');
     currentDay.text(today);
   }
 
