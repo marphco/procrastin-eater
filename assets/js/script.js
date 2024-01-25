@@ -31,6 +31,12 @@ $(document).ready(function () {
       // If the current hour is greater, add the "past" class
       $(this).addClass("past");
     }
+
+    // Retrieve the stored task from local storage for this time block
+    let storedTask = localStorage.getItem($(this).find('.hour').text());
+
+    // Populate the textarea with the stored task
+    $(this).find('.description').val(storedTask);
   });
 
   // Event listener for the save button click
